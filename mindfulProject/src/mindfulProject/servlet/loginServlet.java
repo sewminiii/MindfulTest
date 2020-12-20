@@ -50,6 +50,8 @@ public class loginServlet extends HttpServlet {
 		String pwd = request.getParameter("password");
 		
 		try {
+			//use username as user@gmail.com 
+			//password as user
 	
 			if(loginDao.check(email, pwd)) {
 				HttpSession session = request.getSession();
